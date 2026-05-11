@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define MAX 101
+#define MAX 100
 
 struct Costumer {
     char name[100];
@@ -58,7 +58,7 @@ int main() {
         costumersArr[i].realPayment = 0;
     }
 
-    char line[8000];
+    char line[256];
     fgets(line, sizeof(line), in);
 
     while (fgets(line, sizeof(line), in)) {
